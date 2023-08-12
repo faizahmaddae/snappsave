@@ -20,6 +20,13 @@ app.get('/', (req, res) => {
 
 app.get('/api', async (req, res) => {
 
+    // const userAgent = req.headers['x-insta-header'];
+    // if (userAgent == undefined || userAgent == null || userAgent == '') {
+    //     object['status'] = 'error';
+    //     object['error'] = 'you are not allowed to access this site';
+    //     return res.send(object);
+    // }
+
     var fb_url = 'https://www.facebook.com/reel/1028002425277840';
     // fb_url = 'https://www.facebook.com/photo.php?fbid=1478529732919755&set=a.108024456636963&type=3&mibextid=Nif5oz';
     var insta_url = 'https://www.instagram.com/p/CqslAWptPoI/';
@@ -81,7 +88,7 @@ app.get('/api', async (req, res) => {
         // tiktok
         // var tiktok_result = functions.parseTiktok(result);
         // data = tiktok_result;
-        
+
 
     }).catch(error => {
         console.log(`Error: ${error}`);
