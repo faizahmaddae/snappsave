@@ -94,7 +94,7 @@ app.get('/api', async (req, res) => {
         console.log(`Error: ${error}`);
     })
 
-    res.send({ data: data })
+    res.send(data); 
 })
 
 
