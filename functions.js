@@ -102,7 +102,7 @@ function parseInsta(data) {
         var img_url = $(el).find('.download-items__btn').find('a').attr('href');
 
         // if finded dev.download-items__thumb.video its a video
-        var is_video = $(el).find('.download-items__thumb.video').length > 0 ? true : false;
+        var is_video = $(el).find('.download-items__thumb').find('img[alt="Photo"]').length > 0 ? false : true;
 
         if (is_video) {
             response['data'].push({

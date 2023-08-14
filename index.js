@@ -30,6 +30,7 @@ app.get('/api', async (req, res) => {
     var fb_url = 'https://www.facebook.com/reel/1028002425277840';
     // fb_url = 'https://www.facebook.com/photo.php?fbid=1478529732919755&set=a.108024456636963&type=3&mibextid=Nif5oz';
     var insta_url = 'https://www.instagram.com/p/CqslAWptPoI/';
+    insta_url = 'https://www.instagram.com/p/Cu0hpBFAZxr/';
     var tiktok_url = 'https://www.tiktok.com/@angelitomallorquin32/video/7249089724835466523?is_from_webapp=1&sender_device=pc';
     var action = 'https://snapsave.app/action.php?lang=en';
 
